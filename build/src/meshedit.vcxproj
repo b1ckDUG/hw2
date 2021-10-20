@@ -1,0 +1,422 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project DefaultTargets="Build" ToolsVersion="16.0" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <PropertyGroup>
+    <PreferredToolArchitecture>x64</PreferredToolArchitecture>
+  </PropertyGroup>
+  <ItemGroup Label="ProjectConfigurations">
+    <ProjectConfiguration Include="Debug|x64">
+      <Configuration>Debug</Configuration>
+      <Platform>x64</Platform>
+    </ProjectConfiguration>
+    <ProjectConfiguration Include="Release|x64">
+      <Configuration>Release</Configuration>
+      <Platform>x64</Platform>
+    </ProjectConfiguration>
+    <ProjectConfiguration Include="MinSizeRel|x64">
+      <Configuration>MinSizeRel</Configuration>
+      <Platform>x64</Platform>
+    </ProjectConfiguration>
+    <ProjectConfiguration Include="RelWithDebInfo|x64">
+      <Configuration>RelWithDebInfo</Configuration>
+      <Platform>x64</Platform>
+    </ProjectConfiguration>
+  </ItemGroup>
+  <PropertyGroup Label="Globals">
+    <ProjectGuid>{C0BF1DDE-A84B-3FDB-B860-0EC1A0ADFAD8}</ProjectGuid>
+    <WindowsTargetPlatformVersion>10.0.19041.0</WindowsTargetPlatformVersion>
+    <Keyword>Win32Proj</Keyword>
+    <Platform>x64</Platform>
+    <ProjectName>meshedit</ProjectName>
+    <VCProjectUpgraderObjectName>NoUpgrade</VCProjectUpgraderObjectName>
+    <VcpkgEnabled>false</VcpkgEnabled>
+  </PropertyGroup>
+  <Import Project="$(VCTargetsPath)\Microsoft.Cpp.Default.props" />
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Debug|x64'" Label="Configuration">
+    <ConfigurationType>Application</ConfigurationType>
+    <CharacterSet>MultiByte</CharacterSet>
+    <PlatformToolset>v142</PlatformToolset>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Release|x64'" Label="Configuration">
+    <ConfigurationType>Application</ConfigurationType>
+    <CharacterSet>MultiByte</CharacterSet>
+    <PlatformToolset>v142</PlatformToolset>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='MinSizeRel|x64'" Label="Configuration">
+    <ConfigurationType>Application</ConfigurationType>
+    <CharacterSet>MultiByte</CharacterSet>
+    <PlatformToolset>v142</PlatformToolset>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='RelWithDebInfo|x64'" Label="Configuration">
+    <ConfigurationType>Application</ConfigurationType>
+    <CharacterSet>MultiByte</CharacterSet>
+    <PlatformToolset>v142</PlatformToolset>
+  </PropertyGroup>
+  <Import Project="$(VCTargetsPath)\Microsoft.Cpp.props" />
+  <ImportGroup Label="ExtensionSettings">
+  </ImportGroup>
+  <ImportGroup Label="PropertySheets">
+    <Import Project="do_not_import_user.props" Condition="exists('do_not_import_user.props')" Label="LocalAppDataPlatform" />
+  </ImportGroup>
+  <PropertyGroup Label="UserMacros" />
+  <PropertyGroup>
+    <_ProjectFileVersion>10.0.20506.1</_ProjectFileVersion>
+    <OutDir Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">D:\Assignments\computer_graphics\hw_5_6_7-master\build\Debug\</OutDir>
+    <IntDir Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">meshedit.dir\Debug\</IntDir>
+    <TargetName Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">meshedit</TargetName>
+    <TargetExt Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">.exe</TargetExt>
+    <LinkIncremental Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">true</LinkIncremental>
+    <GenerateManifest Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">true</GenerateManifest>
+    <OutDir Condition="'$(Configuration)|$(Platform)'=='Release|x64'">D:\Assignments\computer_graphics\hw_5_6_7-master\build\Release\</OutDir>
+    <IntDir Condition="'$(Configuration)|$(Platform)'=='Release|x64'">meshedit.dir\Release\</IntDir>
+    <TargetName Condition="'$(Configuration)|$(Platform)'=='Release|x64'">meshedit</TargetName>
+    <TargetExt Condition="'$(Configuration)|$(Platform)'=='Release|x64'">.exe</TargetExt>
+    <LinkIncremental Condition="'$(Configuration)|$(Platform)'=='Release|x64'">false</LinkIncremental>
+    <GenerateManifest Condition="'$(Configuration)|$(Platform)'=='Release|x64'">true</GenerateManifest>
+    <OutDir Condition="'$(Configuration)|$(Platform)'=='MinSizeRel|x64'">D:\Assignments\computer_graphics\hw_5_6_7-master\build\MinSizeRel\</OutDir>
+    <IntDir Condition="'$(Configuration)|$(Platform)'=='MinSizeRel|x64'">meshedit.dir\MinSizeRel\</IntDir>
+    <TargetName Condition="'$(Configuration)|$(Platform)'=='MinSizeRel|x64'">meshedit</TargetName>
+    <TargetExt Condition="'$(Configuration)|$(Platform)'=='MinSizeRel|x64'">.exe</TargetExt>
+    <LinkIncremental Condition="'$(Configuration)|$(Platform)'=='MinSizeRel|x64'">false</LinkIncremental>
+    <GenerateManifest Condition="'$(Configuration)|$(Platform)'=='MinSizeRel|x64'">true</GenerateManifest>
+    <OutDir Condition="'$(Configuration)|$(Platform)'=='RelWithDebInfo|x64'">D:\Assignments\computer_graphics\hw_5_6_7-master\build\RelWithDebInfo\</OutDir>
+    <IntDir Condition="'$(Configuration)|$(Platform)'=='RelWithDebInfo|x64'">meshedit.dir\RelWithDebInfo\</IntDir>
+    <TargetName Condition="'$(Configuration)|$(Platform)'=='RelWithDebInfo|x64'">meshedit</TargetName>
+    <TargetExt Condition="'$(Configuration)|$(Platform)'=='RelWithDebInfo|x64'">.exe</TargetExt>
+    <LinkIncremental Condition="'$(Configuration)|$(Platform)'=='RelWithDebInfo|x64'">true</LinkIncremental>
+    <GenerateManifest Condition="'$(Configuration)|$(Platform)'=='RelWithDebInfo|x64'">true</GenerateManifest>
+  </PropertyGroup>
+  <ItemDefinitionGroup Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">
+    <ClCompile>
+      <AdditionalIncludeDirectories>D:\Assignments\computer_graphics\hw_5_6_7-master\CGL\include;C:\Users\Povva\vcpkg\installed\x64-windows\include;D:\Assignments\computer_graphics\hw_5_6_7-master\src\dirent;%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
+      <AdditionalOptions>%(AdditionalOptions) /std=c++14</AdditionalOptions>
+      <AssemblerListingLocation>$(IntDir)</AssemblerListingLocation>
+      <BasicRuntimeChecks>EnableFastChecks</BasicRuntimeChecks>
+      <DebugInformationFormat>ProgramDatabase</DebugInformationFormat>
+      <ExceptionHandling>Sync</ExceptionHandling>
+      <InlineFunctionExpansion>Disabled</InlineFunctionExpansion>
+      <Optimization>Disabled</Optimization>
+      <PrecompiledHeader>NotUsing</PrecompiledHeader>
+      <RuntimeLibrary>MultiThreadedDebugDLL</RuntimeLibrary>
+      <RuntimeTypeInfo>true</RuntimeTypeInfo>
+      <UseFullPaths>false</UseFullPaths>
+      <WarningLevel>Level3</WarningLevel>
+      <PreprocessorDefinitions>%(PreprocessorDefinitions);WIN32;_WINDOWS;CMAKE_INTDIR="Debug"</PreprocessorDefinitions>
+      <ObjectFileName>$(IntDir)</ObjectFileName>
+    </ClCompile>
+    <ResourceCompile>
+      <PreprocessorDefinitions>%(PreprocessorDefinitions);WIN32;_DEBUG;_WINDOWS;CMAKE_INTDIR=\"Debug\"</PreprocessorDefinitions>
+      <AdditionalIncludeDirectories>D:\Assignments\computer_graphics\hw_5_6_7-master\CGL\include;C:\Users\Povva\vcpkg\installed\x64-windows\include;D:\Assignments\computer_graphics\hw_5_6_7-master\src\dirent;%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
+    </ResourceCompile>
+    <Midl>
+      <AdditionalIncludeDirectories>D:\Assignments\computer_graphics\hw_5_6_7-master\CGL\include;C:\Users\Povva\vcpkg\installed\x64-windows\include;D:\Assignments\computer_graphics\hw_5_6_7-master\src\dirent;%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
+      <OutputDirectory>$(ProjectDir)/$(IntDir)</OutputDirectory>
+      <HeaderFileName>%(Filename).h</HeaderFileName>
+      <TypeLibraryName>%(Filename).tlb</TypeLibraryName>
+      <InterfaceIdentifierFileName>%(Filename)_i.c</InterfaceIdentifierFileName>
+      <ProxyFileName>%(Filename)_p.c</ProxyFileName>
+    </Midl>
+    <PostBuildEvent>
+      <Message></Message>
+      <Command>setlocal
+C:\Windows\System32\WindowsPowerShell\v1.0\powershell.exe -noprofile -executionpolicy Bypass -file C:/Users/Povva/vcpkg/scripts/buildsystems/msbuild/applocal.ps1 -targetBinary D:/Assignments/computer_graphics/hw_5_6_7-master/build/Debug/meshedit.exe -installedDir C:/Users/Povva/vcpkg/installed/x64-windows/debug/bin -OutVariable out
+if %errorlevel% neq 0 goto :cmEnd
+:cmEnd
+endlocal &amp; call :cmErrorLevel %errorlevel% &amp; goto :cmDone
+:cmErrorLevel
+exit /b %1
+:cmDone
+if %errorlevel% neq 0 goto :VCEnd</Command>
+    </PostBuildEvent>
+    <Link>
+      <AdditionalDependencies>..\CGL\src\Debug\CGL.lib;..\CGL\deps\glew\Debug\glew.lib;..\CGL\deps\glfw\src\Debug\glfw3.lib;opengl32.lib;opengl32.lib;glu32.lib;C:\Users\Povva\vcpkg\installed\x64-windows\debug\lib\freetyped.lib;..\..\src\dirent\glut32.lib;kernel32.lib;user32.lib;gdi32.lib;winspool.lib;shell32.lib;ole32.lib;oleaut32.lib;uuid.lib;comdlg32.lib;advapi32.lib</AdditionalDependencies>
+      <AdditionalLibraryDirectories>D:/Assignments/computer_graphics/hw_5_6_7-master/CGL/deps/freetype/lib;D:/Assignments/computer_graphics/hw_5_6_7-master/CGL/deps/freetype/lib/$(Configuration);%(AdditionalLibraryDirectories)</AdditionalLibraryDirectories>
+      <AdditionalOptions>%(AdditionalOptions) /machine:x64</AdditionalOptions>
+      <GenerateDebugInformation>true</GenerateDebugInformation>
+      <IgnoreSpecificDefaultLibraries>%(IgnoreSpecificDefaultLibraries)</IgnoreSpecificDefaultLibraries>
+      <ImportLibrary>D:/Assignments/computer_graphics/hw_5_6_7-master/build/Debug/meshedit.lib</ImportLibrary>
+      <ProgramDataBaseFile>D:/Assignments/computer_graphics/hw_5_6_7-master/build/Debug/meshedit.pdb</ProgramDataBaseFile>
+      <SubSystem>Console</SubSystem>
+    </Link>
+    <ProjectReference>
+      <LinkLibraryDependencies>false</LinkLibraryDependencies>
+    </ProjectReference>
+  </ItemDefinitionGroup>
+  <ItemDefinitionGroup Condition="'$(Configuration)|$(Platform)'=='Release|x64'">
+    <ClCompile>
+      <AdditionalIncludeDirectories>D:\Assignments\computer_graphics\hw_5_6_7-master\CGL\include;C:\Users\Povva\vcpkg\installed\x64-windows\include;D:\Assignments\computer_graphics\hw_5_6_7-master\src\dirent;%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
+      <AdditionalOptions>%(AdditionalOptions) /std=c++14</AdditionalOptions>
+      <AssemblerListingLocation>$(IntDir)</AssemblerListingLocation>
+      <ExceptionHandling>Sync</ExceptionHandling>
+      <InlineFunctionExpansion>AnySuitable</InlineFunctionExpansion>
+      <Optimization>MaxSpeed</Optimization>
+      <PrecompiledHeader>NotUsing</PrecompiledHeader>
+      <RuntimeLibrary>MultiThreadedDLL</RuntimeLibrary>
+      <RuntimeTypeInfo>true</RuntimeTypeInfo>
+      <UseFullPaths>false</UseFullPaths>
+      <WarningLevel>Level3</WarningLevel>
+      <PreprocessorDefinitions>%(PreprocessorDefinitions);WIN32;_WINDOWS;NDEBUG;CMAKE_INTDIR="Release"</PreprocessorDefinitions>
+      <ObjectFileName>$(IntDir)</ObjectFileName>
+      <DebugInformationFormat>
+      </DebugInformationFormat>
+    </ClCompile>
+    <ResourceCompile>
+      <PreprocessorDefinitions>%(PreprocessorDefinitions);WIN32;_WINDOWS;NDEBUG;CMAKE_INTDIR=\"Release\"</PreprocessorDefinitions>
+      <AdditionalIncludeDirectories>D:\Assignments\computer_graphics\hw_5_6_7-master\CGL\include;C:\Users\Povva\vcpkg\installed\x64-windows\include;D:\Assignments\computer_graphics\hw_5_6_7-master\src\dirent;%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
+    </ResourceCompile>
+    <Midl>
+      <AdditionalIncludeDirectories>D:\Assignments\computer_graphics\hw_5_6_7-master\CGL\include;C:\Users\Povva\vcpkg\installed\x64-windows\include;D:\Assignments\computer_graphics\hw_5_6_7-master\src\dirent;%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
+      <OutputDirectory>$(ProjectDir)/$(IntDir)</OutputDirectory>
+      <HeaderFileName>%(Filename).h</HeaderFileName>
+      <TypeLibraryName>%(Filename).tlb</TypeLibraryName>
+      <InterfaceIdentifierFileName>%(Filename)_i.c</InterfaceIdentifierFileName>
+      <ProxyFileName>%(Filename)_p.c</ProxyFileName>
+    </Midl>
+    <PostBuildEvent>
+      <Message></Message>
+      <Command>setlocal
+C:\Windows\System32\WindowsPowerShell\v1.0\powershell.exe -noprofile -executionpolicy Bypass -file C:/Users/Povva/vcpkg/scripts/buildsystems/msbuild/applocal.ps1 -targetBinary D:/Assignments/computer_graphics/hw_5_6_7-master/build/Release/meshedit.exe -installedDir C:/Users/Povva/vcpkg/installed/x64-windows/bin -OutVariable out
+if %errorlevel% neq 0 goto :cmEnd
+:cmEnd
+endlocal &amp; call :cmErrorLevel %errorlevel% &amp; goto :cmDone
+:cmErrorLevel
+exit /b %1
+:cmDone
+if %errorlevel% neq 0 goto :VCEnd</Command>
+    </PostBuildEvent>
+    <Link>
+      <AdditionalDependencies>..\CGL\src\Release\CGL.lib;..\CGL\deps\glew\Release\glew.lib;..\CGL\deps\glfw\src\Release\glfw3.lib;opengl32.lib;opengl32.lib;glu32.lib;C:\Users\Povva\vcpkg\installed\x64-windows\lib\freetype.lib;..\..\src\dirent\glut32.lib;kernel32.lib;user32.lib;gdi32.lib;winspool.lib;shell32.lib;ole32.lib;oleaut32.lib;uuid.lib;comdlg32.lib;advapi32.lib</AdditionalDependencies>
+      <AdditionalLibraryDirectories>D:/Assignments/computer_graphics/hw_5_6_7-master/CGL/deps/freetype/lib;D:/Assignments/computer_graphics/hw_5_6_7-master/CGL/deps/freetype/lib/$(Configuration);%(AdditionalLibraryDirectories)</AdditionalLibraryDirectories>
+      <AdditionalOptions>%(AdditionalOptions) /machine:x64</AdditionalOptions>
+      <GenerateDebugInformation>false</GenerateDebugInformation>
+      <IgnoreSpecificDefaultLibraries>%(IgnoreSpecificDefaultLibraries)</IgnoreSpecificDefaultLibraries>
+      <ImportLibrary>D:/Assignments/computer_graphics/hw_5_6_7-master/build/Release/meshedit.lib</ImportLibrary>
+      <ProgramDataBaseFile>D:/Assignments/computer_graphics/hw_5_6_7-master/build/Release/meshedit.pdb</ProgramDataBaseFile>
+      <SubSystem>Console</SubSystem>
+    </Link>
+    <ProjectReference>
+      <LinkLibraryDependencies>false</LinkLibraryDependencies>
+    </ProjectReference>
+  </ItemDefinitionGroup>
+  <ItemDefinitionGroup Condition="'$(Configuration)|$(Platform)'=='MinSizeRel|x64'">
+    <ClCompile>
+      <AdditionalIncludeDirectories>D:\Assignments\computer_graphics\hw_5_6_7-master\CGL\include;C:\Users\Povva\vcpkg\installed\x64-windows\include;D:\Assignments\computer_graphics\hw_5_6_7-master\src\dirent;%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
+      <AdditionalOptions>%(AdditionalOptions) /std=c++14</AdditionalOptions>
+      <AssemblerListingLocation>$(IntDir)</AssemblerListingLocation>
+      <ExceptionHandling>Sync</ExceptionHandling>
+      <InlineFunctionExpansion>OnlyExplicitInline</InlineFunctionExpansion>
+      <Optimization>MinSpace</Optimization>
+      <PrecompiledHeader>NotUsing</PrecompiledHeader>
+      <RuntimeLibrary>MultiThreadedDLL</RuntimeLibrary>
+      <RuntimeTypeInfo>true</RuntimeTypeInfo>
+      <UseFullPaths>false</UseFullPaths>
+      <WarningLevel>Level3</WarningLevel>
+      <PreprocessorDefinitions>%(PreprocessorDefinitions);WIN32;_WINDOWS;NDEBUG;CMAKE_INTDIR="MinSizeRel"</PreprocessorDefinitions>
+      <ObjectFileName>$(IntDir)</ObjectFileName>
+      <DebugInformationFormat>
+      </DebugInformationFormat>
+    </ClCompile>
+    <ResourceCompile>
+      <PreprocessorDefinitions>%(PreprocessorDefinitions);WIN32;_WINDOWS;NDEBUG;CMAKE_INTDIR=\"MinSizeRel\"</PreprocessorDefinitions>
+      <AdditionalIncludeDirectories>D:\Assignments\computer_graphics\hw_5_6_7-master\CGL\include;C:\Users\Povva\vcpkg\installed\x64-windows\include;D:\Assignments\computer_graphics\hw_5_6_7-master\src\dirent;%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
+    </ResourceCompile>
+    <Midl>
+      <AdditionalIncludeDirectories>D:\Assignments\computer_graphics\hw_5_6_7-master\CGL\include;C:\Users\Povva\vcpkg\installed\x64-windows\include;D:\Assignments\computer_graphics\hw_5_6_7-master\src\dirent;%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
+      <OutputDirectory>$(ProjectDir)/$(IntDir)</OutputDirectory>
+      <HeaderFileName>%(Filename).h</HeaderFileName>
+      <TypeLibraryName>%(Filename).tlb</TypeLibraryName>
+      <InterfaceIdentifierFileName>%(Filename)_i.c</InterfaceIdentifierFileName>
+      <ProxyFileName>%(Filename)_p.c</ProxyFileName>
+    </Midl>
+    <PostBuildEvent>
+      <Message></Message>
+      <Command>setlocal
+C:\Windows\System32\WindowsPowerShell\v1.0\powershell.exe -noprofile -executionpolicy Bypass -file C:/Users/Povva/vcpkg/scripts/buildsystems/msbuild/applocal.ps1 -targetBinary D:/Assignments/computer_graphics/hw_5_6_7-master/build/MinSizeRel/meshedit.exe -installedDir C:/Users/Povva/vcpkg/installed/x64-windows/bin -OutVariable out
+if %errorlevel% neq 0 goto :cmEnd
+:cmEnd
+endlocal &amp; call :cmErrorLevel %errorlevel% &amp; goto :cmDone
+:cmErrorLevel
+exit /b %1
+:cmDone
+if %errorlevel% neq 0 goto :VCEnd</Command>
+    </PostBuildEvent>
+    <Link>
+      <AdditionalDependencies>..\CGL\src\MinSizeRel\CGL.lib;..\CGL\deps\glew\MinSizeRel\glew.lib;..\CGL\deps\glfw\src\MinSizeRel\glfw3.lib;opengl32.lib;opengl32.lib;glu32.lib;C:\Users\Povva\vcpkg\installed\x64-windows\lib\freetype.lib;..\..\src\dirent\glut32.lib;kernel32.lib;user32.lib;gdi32.lib;winspool.lib;shell32.lib;ole32.lib;oleaut32.lib;uuid.lib;comdlg32.lib;advapi32.lib</AdditionalDependencies>
+      <AdditionalLibraryDirectories>D:/Assignments/computer_graphics/hw_5_6_7-master/CGL/deps/freetype/lib;D:/Assignments/computer_graphics/hw_5_6_7-master/CGL/deps/freetype/lib/$(Configuration);%(AdditionalLibraryDirectories)</AdditionalLibraryDirectories>
+      <AdditionalOptions>%(AdditionalOptions) /machine:x64</AdditionalOptions>
+      <GenerateDebugInformation>false</GenerateDebugInformation>
+      <IgnoreSpecificDefaultLibraries>%(IgnoreSpecificDefaultLibraries)</IgnoreSpecificDefaultLibraries>
+      <ImportLibrary>D:/Assignments/computer_graphics/hw_5_6_7-master/build/MinSizeRel/meshedit.lib</ImportLibrary>
+      <ProgramDataBaseFile>D:/Assignments/computer_graphics/hw_5_6_7-master/build/MinSizeRel/meshedit.pdb</ProgramDataBaseFile>
+      <SubSystem>Console</SubSystem>
+    </Link>
+    <ProjectReference>
+      <LinkLibraryDependencies>false</LinkLibraryDependencies>
+    </ProjectReference>
+  </ItemDefinitionGroup>
+  <ItemDefinitionGroup Condition="'$(Configuration)|$(Platform)'=='RelWithDebInfo|x64'">
+    <ClCompile>
+      <AdditionalIncludeDirectories>D:\Assignments\computer_graphics\hw_5_6_7-master\CGL\include;C:\Users\Povva\vcpkg\installed\x64-windows\include;D:\Assignments\computer_graphics\hw_5_6_7-master\src\dirent;%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
+      <AdditionalOptions>%(AdditionalOptions) /std=c++14</AdditionalOptions>
+      <AssemblerListingLocation>$(IntDir)</AssemblerListingLocation>
+      <DebugInformationFormat>ProgramDatabase</DebugInformationFormat>
+      <ExceptionHandling>Sync</ExceptionHandling>
+      <InlineFunctionExpansion>OnlyExplicitInline</InlineFunctionExpansion>
+      <Optimization>MaxSpeed</Optimization>
+      <PrecompiledHeader>NotUsing</PrecompiledHeader>
+      <RuntimeLibrary>MultiThreadedDLL</RuntimeLibrary>
+      <RuntimeTypeInfo>true</RuntimeTypeInfo>
+      <UseFullPaths>false</UseFullPaths>
+      <WarningLevel>Level3</WarningLevel>
+      <PreprocessorDefinitions>%(PreprocessorDefinitions);WIN32;_WINDOWS;NDEBUG;CMAKE_INTDIR="RelWithDebInfo"</PreprocessorDefinitions>
+      <ObjectFileName>$(IntDir)</ObjectFileName>
+    </ClCompile>
+    <ResourceCompile>
+      <PreprocessorDefinitions>%(PreprocessorDefinitions);WIN32;_WINDOWS;NDEBUG;CMAKE_INTDIR=\"RelWithDebInfo\"</PreprocessorDefinitions>
+      <AdditionalIncludeDirectories>D:\Assignments\computer_graphics\hw_5_6_7-master\CGL\include;C:\Users\Povva\vcpkg\installed\x64-windows\include;D:\Assignments\computer_graphics\hw_5_6_7-master\src\dirent;%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
+    </ResourceCompile>
+    <Midl>
+      <AdditionalIncludeDirectories>D:\Assignments\computer_graphics\hw_5_6_7-master\CGL\include;C:\Users\Povva\vcpkg\installed\x64-windows\include;D:\Assignments\computer_graphics\hw_5_6_7-master\src\dirent;%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
+      <OutputDirectory>$(ProjectDir)/$(IntDir)</OutputDirectory>
+      <HeaderFileName>%(Filename).h</HeaderFileName>
+      <TypeLibraryName>%(Filename).tlb</TypeLibraryName>
+      <InterfaceIdentifierFileName>%(Filename)_i.c</InterfaceIdentifierFileName>
+      <ProxyFileName>%(Filename)_p.c</ProxyFileName>
+    </Midl>
+    <PostBuildEvent>
+      <Message></Message>
+      <Command>setlocal
+C:\Windows\System32\WindowsPowerShell\v1.0\powershell.exe -noprofile -executionpolicy Bypass -file C:/Users/Povva/vcpkg/scripts/buildsystems/msbuild/applocal.ps1 -targetBinary D:/Assignments/computer_graphics/hw_5_6_7-master/build/RelWithDebInfo/meshedit.exe -installedDir C:/Users/Povva/vcpkg/installed/x64-windows/bin -OutVariable out
+if %errorlevel% neq 0 goto :cmEnd
+:cmEnd
+endlocal &amp; call :cmErrorLevel %errorlevel% &amp; goto :cmDone
+:cmErrorLevel
+exit /b %1
+:cmDone
+if %errorlevel% neq 0 goto :VCEnd</Command>
+    </PostBuildEvent>
+    <Link>
+      <AdditionalDependencies>..\CGL\src\RelWithDebInfo\CGL.lib;..\CGL\deps\glew\RelWithDebInfo\glew.lib;..\CGL\deps\glfw\src\RelWithDebInfo\glfw3.lib;opengl32.lib;opengl32.lib;glu32.lib;C:\Users\Povva\vcpkg\installed\x64-windows\lib\freetype.lib;..\..\src\dirent\glut32.lib;kernel32.lib;user32.lib;gdi32.lib;winspool.lib;shell32.lib;ole32.lib;oleaut32.lib;uuid.lib;comdlg32.lib;advapi32.lib</AdditionalDependencies>
+      <AdditionalLibraryDirectories>D:/Assignments/computer_graphics/hw_5_6_7-master/CGL/deps/freetype/lib;D:/Assignments/computer_graphics/hw_5_6_7-master/CGL/deps/freetype/lib/$(Configuration);%(AdditionalLibraryDirectories)</AdditionalLibraryDirectories>
+      <AdditionalOptions>%(AdditionalOptions) /machine:x64</AdditionalOptions>
+      <GenerateDebugInformation>true</GenerateDebugInformation>
+      <IgnoreSpecificDefaultLibraries>%(IgnoreSpecificDefaultLibraries)</IgnoreSpecificDefaultLibraries>
+      <ImportLibrary>D:/Assignments/computer_graphics/hw_5_6_7-master/build/RelWithDebInfo/meshedit.lib</ImportLibrary>
+      <ProgramDataBaseFile>D:/Assignments/computer_graphics/hw_5_6_7-master/build/RelWithDebInfo/meshedit.pdb</ProgramDataBaseFile>
+      <SubSystem>Console</SubSystem>
+    </Link>
+    <ProjectReference>
+      <LinkLibraryDependencies>false</LinkLibraryDependencies>
+    </ProjectReference>
+  </ItemDefinitionGroup>
+  <ItemGroup>
+    <CustomBuild Include="D:\Assignments\computer_graphics\hw_5_6_7-master\src\CMakeLists.txt">
+      <UseUtf8Encoding>Always</UseUtf8Encoding>
+      <Message Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">Building Custom Rule D:/Assignments/computer_graphics/hw_5_6_7-master/src/CMakeLists.txt</Message>
+      <Command Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">setlocal
+"C:\Program Files\CMake\bin\cmake.exe" -SD:/Assignments/computer_graphics/hw_5_6_7-master -BD:/Assignments/computer_graphics/hw_5_6_7-master/build --check-stamp-file D:/Assignments/computer_graphics/hw_5_6_7-master/build/src/CMakeFiles/generate.stamp
+if %errorlevel% neq 0 goto :cmEnd
+:cmEnd
+endlocal &amp; call :cmErrorLevel %errorlevel% &amp; goto :cmDone
+:cmErrorLevel
+exit /b %1
+:cmDone
+if %errorlevel% neq 0 goto :VCEnd</Command>
+      <AdditionalInputs Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">%(AdditionalInputs)</AdditionalInputs>
+      <Outputs Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">D:\Assignments\computer_graphics\hw_5_6_7-master\build\src\CMakeFiles\generate.stamp</Outputs>
+      <LinkObjects Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">false</LinkObjects>
+      <Message Condition="'$(Configuration)|$(Platform)'=='Release|x64'">Building Custom Rule D:/Assignments/computer_graphics/hw_5_6_7-master/src/CMakeLists.txt</Message>
+      <Command Condition="'$(Configuration)|$(Platform)'=='Release|x64'">setlocal
+"C:\Program Files\CMake\bin\cmake.exe" -SD:/Assignments/computer_graphics/hw_5_6_7-master -BD:/Assignments/computer_graphics/hw_5_6_7-master/build --check-stamp-file D:/Assignments/computer_graphics/hw_5_6_7-master/build/src/CMakeFiles/generate.stamp
+if %errorlevel% neq 0 goto :cmEnd
+:cmEnd
+endlocal &amp; call :cmErrorLevel %errorlevel% &amp; goto :cmDone
+:cmErrorLevel
+exit /b %1
+:cmDone
+if %errorlevel% neq 0 goto :VCEnd</Command>
+      <AdditionalInputs Condition="'$(Configuration)|$(Platform)'=='Release|x64'">%(AdditionalInputs)</AdditionalInputs>
+      <Outputs Condition="'$(Configuration)|$(Platform)'=='Release|x64'">D:\Assignments\computer_graphics\hw_5_6_7-master\build\src\CMakeFiles\generate.stamp</Outputs>
+      <LinkObjects Condition="'$(Configuration)|$(Platform)'=='Release|x64'">false</LinkObjects>
+      <Message Condition="'$(Configuration)|$(Platform)'=='MinSizeRel|x64'">Building Custom Rule D:/Assignments/computer_graphics/hw_5_6_7-master/src/CMakeLists.txt</Message>
+      <Command Condition="'$(Configuration)|$(Platform)'=='MinSizeRel|x64'">setlocal
+"C:\Program Files\CMake\bin\cmake.exe" -SD:/Assignments/computer_graphics/hw_5_6_7-master -BD:/Assignments/computer_graphics/hw_5_6_7-master/build --check-stamp-file D:/Assignments/computer_graphics/hw_5_6_7-master/build/src/CMakeFiles/generate.stamp
+if %errorlevel% neq 0 goto :cmEnd
+:cmEnd
+endlocal &amp; call :cmErrorLevel %errorlevel% &amp; goto :cmDone
+:cmErrorLevel
+exit /b %1
+:cmDone
+if %errorlevel% neq 0 goto :VCEnd</Command>
+      <AdditionalInputs Condition="'$(Configuration)|$(Platform)'=='MinSizeRel|x64'">%(AdditionalInputs)</AdditionalInputs>
+      <Outputs Condition="'$(Configuration)|$(Platform)'=='MinSizeRel|x64'">D:\Assignments\computer_graphics\hw_5_6_7-master\build\src\CMakeFiles\generate.stamp</Outputs>
+      <LinkObjects Condition="'$(Configuration)|$(Platform)'=='MinSizeRel|x64'">false</LinkObjects>
+      <Message Condition="'$(Configuration)|$(Platform)'=='RelWithDebInfo|x64'">Building Custom Rule D:/Assignments/computer_graphics/hw_5_6_7-master/src/CMakeLists.txt</Message>
+      <Command Condition="'$(Configuration)|$(Platform)'=='RelWithDebInfo|x64'">setlocal
+"C:\Program Files\CMake\bin\cmake.exe" -SD:/Assignments/computer_graphics/hw_5_6_7-master -BD:/Assignments/computer_graphics/hw_5_6_7-master/build --check-stamp-file D:/Assignments/computer_graphics/hw_5_6_7-master/build/src/CMakeFiles/generate.stamp
+if %errorlevel% neq 0 goto :cmEnd
+:cmEnd
+endlocal &amp; call :cmErrorLevel %errorlevel% &amp; goto :cmDone
+:cmErrorLevel
+exit /b %1
+:cmDone
+if %errorlevel% neq 0 goto :VCEnd</Command>
+      <AdditionalInputs Condition="'$(Configuration)|$(Platform)'=='RelWithDebInfo|x64'">%(AdditionalInputs)</AdditionalInputs>
+      <Outputs Condition="'$(Configuration)|$(Platform)'=='RelWithDebInfo|x64'">D:\Assignments\computer_graphics\hw_5_6_7-master\build\src\CMakeFiles\generate.stamp</Outputs>
+      <LinkObjects Condition="'$(Configuration)|$(Platform)'=='RelWithDebInfo|x64'">false</LinkObjects>
+    </CustomBuild>
+  </ItemGroup>
+  <ItemGroup>
+    <ClCompile Include="D:\Assignments\computer_graphics\hw_5_6_7-master\src\bezierPatch.cpp" />
+    <ClCompile Include="D:\Assignments\computer_graphics\hw_5_6_7-master\src\bezierCurve.cpp" />
+    <ClCompile Include="D:\Assignments\computer_graphics\hw_5_6_7-master\src\scene.cpp" />
+    <ClCompile Include="D:\Assignments\computer_graphics\hw_5_6_7-master\src\camera.cpp" />
+    <ClCompile Include="D:\Assignments\computer_graphics\hw_5_6_7-master\src\light.cpp" />
+    <ClCompile Include="D:\Assignments\computer_graphics\hw_5_6_7-master\src\mesh.cpp" />
+    <ClCompile Include="D:\Assignments\computer_graphics\hw_5_6_7-master\src\material.cpp" />
+    <ClCompile Include="D:\Assignments\computer_graphics\hw_5_6_7-master\src\texture.cpp" />
+    <ClCompile Include="D:\Assignments\computer_graphics\hw_5_6_7-master\src\collada.cpp" />
+    <ClCompile Include="D:\Assignments\computer_graphics\hw_5_6_7-master\src\halfEdgeMesh.cpp" />
+    <ClCompile Include="D:\Assignments\computer_graphics\hw_5_6_7-master\src\student_code.cpp" />
+    <ClCompile Include="D:\Assignments\computer_graphics\hw_5_6_7-master\src\meshEdit.cpp" />
+    <ClCompile Include="D:\Assignments\computer_graphics\hw_5_6_7-master\src\main.cpp" />
+    <ClCompile Include="D:\Assignments\computer_graphics\hw_5_6_7-master\src\png.cpp" />
+    <ClInclude Include="D:\Assignments\computer_graphics\hw_5_6_7-master\src\bezierPatch.h" />
+    <ClInclude Include="D:\Assignments\computer_graphics\hw_5_6_7-master\src\bezierCurve.h" />
+    <ClInclude Include="D:\Assignments\computer_graphics\hw_5_6_7-master\src\scene.h" />
+    <ClInclude Include="D:\Assignments\computer_graphics\hw_5_6_7-master\src\camera.h" />
+    <ClInclude Include="D:\Assignments\computer_graphics\hw_5_6_7-master\src\light.h" />
+    <ClInclude Include="D:\Assignments\computer_graphics\hw_5_6_7-master\src\mesh.h" />
+    <ClInclude Include="D:\Assignments\computer_graphics\hw_5_6_7-master\src\material.h" />
+    <ClInclude Include="D:\Assignments\computer_graphics\hw_5_6_7-master\src\texture.h" />
+    <ClInclude Include="D:\Assignments\computer_graphics\hw_5_6_7-master\src\collada.h" />
+    <ClInclude Include="D:\Assignments\computer_graphics\hw_5_6_7-master\src\halfEdgeMesh.h" />
+    <ClInclude Include="D:\Assignments\computer_graphics\hw_5_6_7-master\src\student_code.h" />
+    <ClInclude Include="D:\Assignments\computer_graphics\hw_5_6_7-master\src\meshEdit.h" />
+    <ClInclude Include="D:\Assignments\computer_graphics\hw_5_6_7-master\src\shaderUtils.h" />
+    <ClInclude Include="D:\Assignments\computer_graphics\hw_5_6_7-master\src\mergeVertices.h" />
+    <ClInclude Include="D:\Assignments\computer_graphics\hw_5_6_7-master\src\png.h" />
+  </ItemGroup>
+  <ItemGroup>
+    <ProjectReference Include="D:\Assignments\computer_graphics\hw_5_6_7-master\build\ZERO_CHECK.vcxproj">
+      <Project>{D9B3F5D7-825A-3EA6-85F4-C7F790E39231}</Project>
+      <Name>ZERO_CHECK</Name>
+      <ReferenceOutputAssembly>false</ReferenceOutputAssembly>
+      <CopyToOutputDirectory>Never</CopyToOutputDirectory>
+    </ProjectReference>
+    <ProjectReference Include="D:\Assignments\computer_graphics\hw_5_6_7-master\build\CGL\src\CGL.vcxproj">
+      <Project>{18031055-BF70-3B04-B0BA-FAFFF2E0E845}</Project>
+      <Name>CGL</Name>
+    </ProjectReference>
+    <ProjectReference Include="D:\Assignments\computer_graphics\hw_5_6_7-master\build\CGL\deps\glew\glew.vcxproj">
+      <Project>{2B563A3E-92E8-3E47-8CB3-8383CCFACD42}</Project>
+      <Name>glew</Name>
+    </ProjectReference>
+    <ProjectReference Include="D:\Assignments\computer_graphics\hw_5_6_7-master\build\CGL\deps\glfw\src\glfw.vcxproj">
+      <Project>{96ACD0A9-6647-325B-80C0-9342E1BAACCA}</Project>
+      <Name>glfw</Name>
+    </ProjectReference>
+  </ItemGroup>
+  <Import Project="$(VCTargetsPath)\Microsoft.Cpp.targets" />
+  <ImportGroup Label="ExtensionTargets">
+  </ImportGroup>
+</Project>

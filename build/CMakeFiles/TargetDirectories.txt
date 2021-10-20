@@ -1,0 +1,17 @@
+D:/Assignments/computer_graphics/hw_5_6_7-master/build/CMakeFiles/INSTALL.dir
+D:/Assignments/computer_graphics/hw_5_6_7-master/build/CMakeFiles/ALL_BUILD.dir
+D:/Assignments/computer_graphics/hw_5_6_7-master/build/CMakeFiles/ZERO_CHECK.dir
+D:/Assignments/computer_graphics/hw_5_6_7-master/build/CGL/CMakeFiles/INSTALL.dir
+D:/Assignments/computer_graphics/hw_5_6_7-master/build/CGL/CMakeFiles/ALL_BUILD.dir
+D:/Assignments/computer_graphics/hw_5_6_7-master/build/CGL/deps/freetype/CMakeFiles/INSTALL.dir
+D:/Assignments/computer_graphics/hw_5_6_7-master/build/CGL/deps/glew/CMakeFiles/glew.dir
+D:/Assignments/computer_graphics/hw_5_6_7-master/build/CGL/deps/glew/CMakeFiles/INSTALL.dir
+D:/Assignments/computer_graphics/hw_5_6_7-master/build/CGL/deps/glfw/CMakeFiles/uninstall.dir
+D:/Assignments/computer_graphics/hw_5_6_7-master/build/CGL/deps/glfw/CMakeFiles/INSTALL.dir
+D:/Assignments/computer_graphics/hw_5_6_7-master/build/CGL/deps/glfw/CMakeFiles/ALL_BUILD.dir
+D:/Assignments/computer_graphics/hw_5_6_7-master/build/CGL/deps/glfw/src/CMakeFiles/glfw.dir
+D:/Assignments/computer_graphics/hw_5_6_7-master/build/CGL/deps/glfw/src/CMakeFiles/INSTALL.dir
+D:/Assignments/computer_graphics/hw_5_6_7-master/build/CGL/src/CMakeFiles/CGL.dir
+D:/Assignments/computer_graphics/hw_5_6_7-master/build/CGL/src/CMakeFiles/INSTALL.dir
+D:/Assignments/computer_graphics/hw_5_6_7-master/build/src/CMakeFiles/meshedit.dir
+D:/Assignments/computer_graphics/hw_5_6_7-master/build/src/CMakeFiles/INSTALL.dir
