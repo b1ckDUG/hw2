@@ -1,4 +1,10 @@
 .vscode
+.vs
 .idea
 cmake-build-debug
 build
+out/
+build/
+build-dbg/
+*.swp
+*.json
