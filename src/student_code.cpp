@@ -88,14 +88,107 @@ namespace CGL
     // Returns an approximate unit normal at this vertex, computed by
     // taking the area-weighted average of the normals of neighboring
     // triangles, then normalizing.
-    return Vector3D();
+      /*HalfedgeCIter h = halfedge();
+      //Vector3D vPos = position;
+      //vector<Vector3D> triangleVs;
+      vector<Vector3D> vectorSums;
+      do {
+          vector<Vector3D> triangleVs;
+          HalfedgeCIter hCopy = h;
+          do {
+              //h = h->next();
+              VertexCIter v = hCopy->vertex();
+              Vector3D vPos = v->position;
+              triangleVs.push_back(vPos);
+              hCopy = hCopy->next();
+          } while (hCopy != h);
+          Vector3D crossP = cross(triangleVs[1] - triangleVs[0], triangleVs[2] - triangleVs[1]);
+          float magnitude = sqrt(crossP.x*crossP.x + crossP.y*crossP.y + crossP.z*crossP.z);
+          float area = magnitude/2;
+          Vector3D normal = cross(triangleVs[1] - triangleVs[0], triangleVs[2] - triangleVs[0]);
+          vectorSums.push_back(area*normal);
+          triangleVs.clear();
+          HalfedgeCIter hTwin = h->twin();
+          h = hTwin->next();
+      } while (h != halfedge());
+      
+      Vector3D finalV = Vector3D(0, 0, 0);
+      for (int i =0; i < vectorSums.size(); i++) {
+          finalV += vectorSums[i];
+      }
+      finalV.normalize();
+      
+    return finalV;*/
   }
 
   EdgeIter HalfedgeMesh::flipEdge( EdgeIter e0 )
-  {
+  {/*
     // TODO Part 4.
     // This method should flip the given edge and return an iterator to the flipped edge.
-    return EdgeIter();
+      if (e0->isBoundary() || e0->halfedge()->face()->isBoundary() || e0->halfedge()->twin()->face()->isBoundary()) {
+          return EdgeIter();
+      }
+      //HalfEdges
+      HalfedgeIter h0 = e0->halfedge();
+      HalfedgeIter h1 = h0->next();
+      HalfedgeIter h2 = h1->next();
+      HalfedgeIter h3 = h0->twin();
+      HalfedgeIter h4 = h3->next();
+      HalfedgeIter h5 = h4->next();
+      HalfedgeIter h6 = h1->twin();
+      HalfedgeIter h7 = h2->twin();
+      HalfedgeIter h8 = h4->twin();
+      HalfedgeIter h9 = h5->twin();
+      
+      //Vertices
+      VertexIter v0 = h0->vertex();
+      VertexIter v1 = h3->vertex();
+      VertexIter v2 = h2->vertex();
+      VertexIter v3 = h5->vertex();
+      
+      //Edges
+      EdgeIter e1 = h1->edge();
+      EdgeIter e2 = h2->edge();
+      EdgeIter e3 = h4->edge();
+      EdgeIter e4 = h5->edge();
+      
+      //Faces
+      FaceIter f0 = h0->face();
+      FaceIter f1 = h3->face();
+      //FaceIter f2 = h6->face();
+      //FaceIter f3 = h5->face();
+      
+      //FLIP!!
+      //Halfedges
+      h0->setNeighbors(h1, h3, v2, e0, f0);
+      h1->setNeighbors(h2, h9, v3, e4, f0);
+      h2->setNeighbors(h0, h6, v1, e1, f0);
+      h3->setNeighbors(h4, h0, v3, e0, f1);
+      h4->setNeighbors(h5, h7, v2, e2, f1);
+      h5->setNeighbors(h3, h8, v0, e3, f1);
+      h6->setNeighbors(h6->next(), h2, v2, e1, h6->face());
+      h7->setNeighbors(h7->next(), h4, v0, e2, h7->face());
+      h8->setNeighbors(h8->next(), h5, v3, e3, h8->face());
+      h9->setNeighbors(h9->next(), h1, v1, e4, h9->face());
+      
+      //Vertices
+      v0->halfedge() = h5;
+      v1->halfedge() = h2;
+      v2->halfedge() = h0;
+      v3->halfedge() = h3;
+      
+      //Edges
+      e0->halfedge() = h0;
+      e1->halfedge() = h2;
+      e2->halfedge() = h4;
+      e3->halfedge() = h5;
+      e4->halfedge() = h1;
+      
+      //Faces
+      f0->halfedge() = h0;
+      f1->halfedge() = h3;
+      
+    return e0;*/
   }
 
   VertexIter HalfedgeMesh::splitEdge( EdgeIter e0 )
